@@ -9,7 +9,7 @@ document.addEventListener("DOMContentLoaded", function () {
     loginMessage.innerHTML = "";
 
     // Basic validation
-    if (username.value.trim() === "" || password.value.trim() === "") {
+    if (username.value === "" || password.value === "") {
       loginMessage.innerHTML =
         '<span style="color: red;">Both fields are required.</span>';
       event.preventDefault(); // Prevent form submission

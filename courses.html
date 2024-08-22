@@ -26,7 +26,30 @@
     <main>
         <section>
             <h2>Courses</h2>
-            <ul id="courseCatalog">
-                <li>Course 1: Introduction to HTML</li>
-                <li>Course 2: CSS Basics</li>
-                <li>Course 3: JavaScript Essentials</li>
+            <form id="courseForm">
+                <div id="courseCatalog">
+                    <input type="checkbox" id="course1" name="courses" value="Introduction to HTML">
+                    <label for="course1">Introduction to HTML</label><br>
+
+                    <input type="checkbox" id="course2" name="courses" value="CSS Basics">
+                    <label for="course2">CSS Basics</label><br>
+
+                    <input type="checkbox" id="course3" name="courses" value="JavaScript Essentials">
+                    <label for="course3">JavaScript Essentials</label><br>
+
+                    <input type="checkbox" id="course4" name="courses" value="Data Structures">
+                    <label for="course4">Data Structures</label><br>
+
+                    <input type="checkbox" id="course5" name="courses" value="Algorithms">
+                    <label for="course5">Algorithms</label><br>
+                </div>
+                <button type="submit">Submit</button>
+                <p id="courseMessage"></p>
+            </form>
+        </section>
+    </main>
+
+    <script src="courses.js"></script>
+</body>
+
+</html>
