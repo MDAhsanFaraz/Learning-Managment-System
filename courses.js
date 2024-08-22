@@ -7,10 +7,8 @@ document.addEventListener("DOMContentLoaded", function () {
       'input[name="courses"]:checked'
     );
 
-    // Clear any previous messages
     courseMessage.innerHTML = "";
 
-    // Validation
     if (selectedCourses.length < 2) {
       courseMessage.innerHTML =
         '<span style="color: red;">Please select at least two courses.</span>';
