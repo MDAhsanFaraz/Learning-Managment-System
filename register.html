@@ -26,12 +26,15 @@
     <main>
         <section>
             <h2>Register</h2>
-            <form id="registerForm">
+            <div id="registerDiv">
                 <label for="regUsername">Username:</label>
                 <input type="text" id="regUsername" required>
 
                 <label for="regEmail">Email:</label>
                 <input type="email" id="regEmail" required>
+
+                <label for="regMobile">Mobile Number:</label>
+                <input type="text" id="regMobile" pattern="\d{10}" placeholder="1234567890" required>
 
                 <label for="regPassword">Password:</label>
                 <input type="password" id="regPassword" required>
@@ -39,9 +42,9 @@
                 <label for="confirmPassword">Confirm Password:</label>
                 <input type="password" id="confirmPassword" required>
 
-                <button type="submit">Register</button>
+                <button id="registerButton">Register</button>
                 <p id="registerMessage"></p>
-            </form>
+            </div>
         </section>
     </main>
 
