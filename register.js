@@ -3,16 +3,14 @@ document.addEventListener("DOMContentLoaded", function () {
   const registerMessage = document.getElementById("registerMessage");
 
   registerButton.addEventListener("click", function () {
-    const username = document.getElementById("regUsername").value.trim();
-    const email = document.getElementById("regEmail").value.trim();
-    const mobile = document.getElementById("regMobile").value.trim();
+    const username = document.getElementById("regUsername").value;
+    const email = document.getElementById("regEmail").value;
+    const mobile = document.getElementById("regMobile").value;
     const password = document.getElementById("regPassword").value;
     const confirmPassword = document.getElementById("confirmPassword").value;
 
-    // Clear any previous messages
     registerMessage.innerHTML = "";
 
-    // Basic validation
     if (
       username === "" ||
       email === "" ||
@@ -29,10 +27,9 @@ document.addEventListener("DOMContentLoaded", function () {
       registerMessage.innerHTML =
         '<span style="color: red;">Mobile number must be exactly 10 digits.</span>';
     } else {
-      // Redirect to login page if validation is successful
       setTimeout(() => {
         window.location.href = "login.html";
-      }, 500); // Delay to allow message display
+      }, 500);
     }
   });
 });

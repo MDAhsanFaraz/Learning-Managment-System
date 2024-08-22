@@ -5,10 +5,8 @@ document.addEventListener("DOMContentLoaded", function () {
   const loginMessage = document.getElementById("loginMessage");
 
   form.addEventListener("submit", function (event) {
-    // Clear any previous messages
     loginMessage.innerHTML = "";
 
-    // Basic validation
     if (username.value === "" || password.value === "") {
       loginMessage.innerHTML =
         '<span style="color: red;">Both fields are required.</span>';

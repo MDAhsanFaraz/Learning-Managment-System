@@ -146,3 +146,8 @@ footer {
   bottom: 0;
   border-top: 4px solid #3498db;
 }
+body {
+  background-image: url("bg.png");
+  background-size: cover; /* Optional: Ensures the image covers the entire background */
+  background-position: center; /* Optional: Centers the background image */
+}
