@@ -10,11 +10,11 @@ document.addEventListener("DOMContentLoaded", function () {
     if (username.value === "" || password.value === "") {
       loginMessage.innerHTML =
         '<span style="color: red;">Both fields are required.</span>';
-      event.preventDefault(); // Prevent form submission
+      event.preventDefault();
     } else if (password.value.length < 6) {
       loginMessage.innerHTML =
         '<span style="color: red;">Password must be at least 6 characters long.</span>';
-      event.preventDefault(); // Prevent form submission
+      event.preventDefault();
     }
   });
 });

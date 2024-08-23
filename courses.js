@@ -12,7 +12,7 @@ document.addEventListener("DOMContentLoaded", function () {
     if (selectedCourses.length < 2) {
       courseMessage.innerHTML =
         '<span style="color: red;">Please select at least two courses.</span>';
-      event.preventDefault(); // Prevent form submission
+      event.preventDefault();
     }
   });
 });

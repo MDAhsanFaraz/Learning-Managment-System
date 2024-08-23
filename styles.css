@@ -151,3 +151,36 @@ body {
   background-size: cover; /* Optional: Ensures the image covers the entire background */
   background-position: center; /* Optional: Centers the background image */
 }
+header {
+  background: #2c3e50;
+  color: white;
+  padding: 1.5em;
+  text-align: center;
+  border-bottom: 4px solid #3498db;
+  display: flex;
+  align-items: center;
+  justify-content: space-between; /* Adjust space between logo and title */
+  flex-wrap: wrap; /* Allows items to wrap to the next line if needed */
+}
+
+header img#logo {
+  height: 200px;
+  width: 200px;
+  margin-right: 1em; /* Adds space between the logo and the title/nav */
+}
+
+header h1 {
+  margin: 0;
+  font-size: 2.5em;
+  flex: 1; /* Allows the title to take up remaining space */
+}
+
+nav ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  background: #34495e;
+  flex: 1; /* Allows the navigation to take up remaining space */
+}
