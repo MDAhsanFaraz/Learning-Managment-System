@@ -15,6 +15,9 @@ document.addEventListener("DOMContentLoaded", function () {
       loginMessage.innerHTML =
         '<span style="color: red;">Password must be at least 6 characters long.</span>';
       event.preventDefault();
+    } else {
+      window.location.href = "dashboard.html";
+      event.preventDefault();
     }
   });
 });
